@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="funcoes.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" media="(max-width: 800px)" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <!-- Titulo -->
+    <title>Feedback com avaliação</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="https://api.sheetmonkey.io/form/bigCUiob968frU5oNQWbbC" method="post">
+            
+            <a href="javascript:void(0)" onclick="Avaliar(1)">
+            <img src="img/star0.png" id="s1"></a>
+
+            <a href="javascript:void(0)" onclick="Avaliar(2)">
+            <img src="img/star0.png" id="s2"></a>
+
+            <a href="javascript:void(0)" onclick="Avaliar(3)">
+            <img src="img/star0.png" id="s3"></a>
+
+            <a href="javascript:void(0)" onclick="Avaliar(4)">
+            <img src="img/star0.png" id="s4"></a>
+
+            <a href="javascript:void(0)" onclick="Avaliar(5)">
+            <img src="img/star0.png" id="s5"></a>
+            <p id="rating">0</p>
+            
+            <!-- Nome -->
+            <label for="text">Nome</label>
+            <input type="text" class="name" placeholder="Nome do Usuário" required><br>
+
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input type="email" class="email" placeholder="Email@gmail.com"><br>
+
+            <!-- Comentário -->
+            <label for="text">Comentário</label><br>
+            <textarea name="comment" rows="5" cols="28" placeholder="Comente Aqui"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    
+</body>
+
+</html>

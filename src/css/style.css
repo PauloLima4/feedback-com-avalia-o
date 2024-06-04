@@ -1,0 +1,56 @@
+/*# sourceMappingURL=style.css.map */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poetsen One", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: rgb(105, 245, 255);
+  --bg-color2: white;
+  --font-color: black;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0,0,0);
+  background: linear-gradient(352deg, rgba(0,0,0,1) 8%, rgba(40,251,255,1) 50%, rgba(0,0,0,1) 89%);
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  padding: 15px;
+  height: 30vh;
+  width: 20vw;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: var(--font-color);
+  background-color: var(--bg-color2);
+}
+
+
+@media (max-width: 800px) {
+  .container {
+    padding: 15px;
+    height: 37vh;
+    width: 67vw;
+    border: 2px black solid;
+    border-radius: 2px;
+    color: var(--font-color);
+    background-color: var(--bg-color2);
+  }
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+}
